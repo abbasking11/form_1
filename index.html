@@ -12,35 +12,46 @@
         .regs {
             background-image: url('https://media.igeeksblog.com/wp-content/uploads/2025/02/iPhone-16e-Variation-Wallpaper-2.jpg');
             padding: 70px;
+            background-size: cover;
 
 
 
         }
 
         #reg {
-            background-color: aliceblue;
-            border: 7px;
+            background-color: #464849;
+            border: 5px;
             width: 230px;
-            margin: 33px 229px;
-            padding: 16px 30px;
+            margin: 110px 25px;
+            padding: 15px 60px;
             border-radius: 10px;
         }
 
         button {
-            padding: 8px;
+            padding: 10px;
             margin: auto;
-            background-color: blue;
+            background-color: #101029;
             color: antiquewhite;
-            width: 97%;
-            border-radius: 3px;
+            width: 100%;
+            border-radius: 5px;
 
-        }button:hover{
+        }
+
+        button:hover {
             background-color: black;
         }
-        
-        
-        input[type="text"],input[type="password"] {
-            padding: 5px 25px;
+
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px 30px;
+            border-radius: 5px;
+            /* border: 20px; */
+            background-color: black;
+            color: #e8e2e2;
+            font-weight: bold;
+            list-style: none;
+            box-shadow: 2px 1px 10px;
 
         }
 
@@ -55,6 +66,89 @@
             margin-right: 190px;
             font-size: 60px;
         }
+
+        .lo {
+            color: beige;
+        }
+
+        /* @media (min-width:320px) and (max-width:374px){
+            p{
+                font-size: 30px;
+                margin-right: 100px;
+                width: 200px;
+                margin-top: 100px;
+            }
+            #reg{
+           
+                  background-color: #464849;
+            border: 5px;
+            width: 230px;
+            margin: 30px 140px;
+            padding: 15px 60px;
+            border-radius: 10px;
+            }
+            
+        } */
+        @media (max-width: 900px) {
+            .regs {
+                flex-direction: column;
+                gap: 24px;
+                padding: 30px 8px;
+            }
+
+            p {
+                text-align: center;
+                align-self: center;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .regs {
+                padding: 16px 2vw;
+            }
+
+            #reg {
+
+                background-color: #464849;
+                border: 5px;
+                width: 250px;
+                margin: 100px 15px;
+                padding: 15px 65px;
+                border-radius: 10px;
+            }
+
+            p {
+                font-size: 2rem;
+                width: 100%;
+                margin: 0 0 10px 0;
+            }
+        }
+
+        @media (max-width: 400px) {
+            #reg {
+                padding: 10px 2vw;
+
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                padding: 5px 25px;
+                border-radius: 5px;
+                /* border: 20px; */
+                margin: 2px 8px;
+                background-color: black;
+                color: #e8e2e2;
+                font-weight: bold;
+                list-style: none;
+                box-shadow: 2px 1px 10px;
+
+            }
+        }
     </style>
 </head>
 
@@ -65,9 +159,9 @@
         <p> Beautiful <br> &nbsp;&nbsp;&nbsp;Sign Up Created By Abbas</p>
         <div id="reg">
             <h2 id="id" style="text-align: left;"> Registration</h2>
-            <form action="backend.php">
+            <form action="https://myprofessionalweb.netlify.app/">
                 <div class="id">
-                    <input type="text" placeholder="Enter Your Name"required>
+                    <input type="text" placeholder="Enter Your Name" required>
                 </div>
                 <br>
                 <div>
@@ -75,22 +169,22 @@
                 </div>
                 <br>
                 <div>
-                    <input type="password" placeholder="Create Password"required>
+                    <input type="password" placeholder="Create Password" required>
                 </div>
                 <br>
                 <div>
                     <input type="password" placeholder="Conform Password" required>
-                </div> 
-                <br> 
+                </div>
+                <br>
                 <div>
                     <input type="checkbox" name="mychecbox"><span>accept term and condition</span>
                 </div>
                 <br>
-                <button type="submit">Reset  Now</button>
+                <button type="submit">Reset Now</button>
                 <div id="i">
                 </div>
-                <h5 style="text-align: center;">Already you have <a href="warp060.blogspot.com">Login Now</a>
-                </form>
+                <h5 style="text-align: center;">Already you have <a href="warp060.blogspot.com" class="lo">Login Now</a>
+            </form>
         </div>
     </div>
 </body>
